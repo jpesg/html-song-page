@@ -155,7 +155,7 @@ body {
 
 main {
   /* background: blue;*/
-  /*flex: 1 0 auto;*/
+  flex: 1 0 auto;
 }
 
 @media screen and (min-width: 776px) {
@@ -180,7 +180,7 @@ main {
     background: #cec9ce;
   }
 
-  .main {
+  main {
     flex: 0 0 80%;
     display: flex;
     flex-direction: column;
@@ -237,4 +237,73 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+
+/****************************songs**************/
+.songs {
+  padding: 40px 0;
+}
+
+.songs h1 {
+  text-transform: uppercase;
+  margin: 0 0 20px 20px;
+}
+
+.song {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.song h3 {
+  text-transform: capitalize;
+}
+
+.song h4 {
+  margin: 10px 0;
+  text-transform: capitalize;
+  color: #8e8e8e;
+}
+
+.song-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.song img {
+  display: block;
+  width: 100% !important;
+  transition: all 2s ease;
+}
+
+.song img:hover {
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+.song-icon {
+  font-size: 30px;
+  padding: 10px;
+  display: inline-block;
+  color: #f15025;
+  border: 2px solid #f15025;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 2s ease;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.song-icon:hover {
+  color: #fff;
+  border-color: #f15025;
+  background: #f15025;
+}
+
+.song-container:hover .song-icon {
+  opacity: 1;
 }

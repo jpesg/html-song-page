@@ -11,4 +11,23 @@ $(document).ready(function() {
     $(".side-nav").toggleClass("margin");
     $(".main").toggleClass("max-width");
   });
+
+  //owl
+  $(".songs-center").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    smartSpeed: 4000,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 5
+      }
+    }
+  });
 });
